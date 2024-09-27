@@ -1,0 +1,35 @@
+body{
+    background-color: rgb(38, 38, 124);
+}
+.table{
+    background-color: white;
+    width: 700px;
+    height: 500px;
+    margin: 0 auto;
+    padding: 15px;
+    ul{
+        display: flex;
+        gap: 20px;
+    }
+    li{
+        display: flex;
+        gap: 10px;
+        text-decoration-color: rgb(119, 177, 177);
+        font-size: 15px;
+        border: 1px solid orange;
+        padding: 5px;
+    }
+}
+input{
+    padding: 10px 20px;
+    border: 1px solid orange;
+}
+button{
+    padding: 10px 15px;
+    background-color: blue;
+    color: white;
+    border: 1px solid blue;
+    display: flex;
+    margin-top: 15px;
+    cursor: pointer;
+}
