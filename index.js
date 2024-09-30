@@ -26,7 +26,7 @@ function addTask(item){
     addList.push(item);
 
     listItem.querySelector('.delete').addEventListener('click', function () {
-        tskList.removeChild(listItem); 
+        listItem.remove(); 
         addList = addList.filter(element => element !== item); 
     });
 
@@ -38,7 +38,10 @@ function addTask(item){
                 <button class="edit">Edit</button>
                 <button class="delete">Delete</button>
             `;
-            addList[addList.indexOf(item)] = newTask;
+            listItem.querySelector('.delete').addEventListener('click', function () {
+                listItem.remove(); 
+                addList = addList.filter(element => element !== item); 
+            });        
         }
     });
 };
